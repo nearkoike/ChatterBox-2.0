@@ -1,0 +1,160 @@
+/*Palette #FAF3E1 #F5E7C6 #FF6D1F #222222*/
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.chat-container {
+  width: 600px; /* Adjust the width as needed */
+  max-width: 100%; /* Ensure it doesn't exceed the viewport width */
+  background-color: #f5e7c6;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222222;
+}
+
+.message-container {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.message-content {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.message-text {
+  padding: 8px;
+  background-color: #ff6d1f;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message.sent .message-text {
+  background-color: #F5E7C6;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  position: relative; /* Make the container relative */
+}
+
+.message-input {
+  flex: 1; /* Let it take remaining space */
+  width: auto; /* Set width to auto */
+  max-width: calc(100% - 100px); /* Set maximum width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.send-button,
+.logout-button,
+.login-button {
+  background-color: #985E40;
+  color: #ffffff;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.send-button:hover,
+.logout-button:hover,
+.login-button:hover {
+  background-color: #222222;
+}
+
+
+.send-button {
+  background-color: #985E40;
+  color: #ffffff;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px; /* Add margin-right */
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vh;
+}
+
+.login-box {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-button {
+  background-color: #985E40;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color:#222222;
+}
+
+
+
+/* Diane's */
+.formContainer {
+  background-color: #faf3e1;
+  height: 100vh;
+  width: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+  .formWrapper{
+      background-color: #222222;
+      padding: 20px 60px;
+      border-radius: 15px ;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+
+
+.logo{
+      font-weight: bold;
+      @include tablet{
+          display: none;
+      } 
+  }
